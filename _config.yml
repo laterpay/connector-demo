@@ -29,12 +29,12 @@ baseurl: ""
 improve_content: https://github.com/Phlow/feeling-responsive/edit/gh-pages
 
 # This URL points directly to the images directory making
-# things easier to link to images in posts and templates. It does not need a slash.
+# things easier to link to images in posts and templates. It needs a slash.
 #
 # Example: <img src="{{ site.urlimg }}/{{ post.image.title }}">
 # Markdown-Example for posts ![Image Text]({{ site.urlimg }}/image.jpg)
 #
-urlimg: "http://laterpay.github.io/feeling-responsive/images"
+urlimg: "http://laterpay.github.io/feeling-responsive/images/"
 
 
 # Logo size is 600x80 pixels
