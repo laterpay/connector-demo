@@ -23,13 +23,13 @@
 </script>
 {% endif %}
 
-<script src="https://connectormwi.dev.laterpaytest.net/sandbox/app-en-us.js"></script>
+<script src="https://connectormwi.dev.laterpaytest.net/sandbox/app-{% if page.laterpay.connector.locale %}{{ page.laterpay.connector.locale }}{% else %}en-us{% endif %}.js"></script>
 
 {% comment %}
 #  Start of Tawk.to Script
-#  
+#
 #  More information in _config.yml
-#  
+#
 {% endcomment %}
 {% if site.tawkto_embed_uri and page.tawkto == true %}
 <script type="text/javascript">
