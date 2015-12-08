@@ -8,6 +8,7 @@
 	<script src="{{ site.url }}{{ site.baseurl }}/assets/js/modernizr.min.js"></script>
 
 
+
   <script>
     WebFontConfig = {
       google: { families: [ 'Lato:400,700,400italic:latin', 'Volkhov::latin' ] }
@@ -74,4 +75,7 @@
     window.LP_DEBUG.LP_DEBUG_CSS_ROOT = 'https://assets.dev.laterpaytest.net';
     {% endif %}
   </script>
+  {% if page.jwt_pc %}
+    <meta property="laterpay:connector:jwt_pc" content="{{ page.jwt_pc }}">
+  {% endif %}
 </head>
